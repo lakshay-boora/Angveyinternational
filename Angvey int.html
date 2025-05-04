@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angvey International - Bridging Minds and Machines</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Apply Inter font globally */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Simple active state for navigation */
+        .nav-link.active {
+            font-weight: 600;
+            color: #1D4ED8; /* Example active color: blue-700 */
+            border-bottom: 2px solid #1D4ED8;
+        }
+        /* Hide sections by default */
+        main section:not(#home) {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600 nav-link" data-target="home">
+                Angvey Int.
+                </a>
+            <div class="space-x-6 hidden md:flex">
+                <a href="#" class="nav-link text-gray-600 hover:text-blue-600 pb-1 active" data-target="home">Home</a>
+                <a href="#" class="nav-link text-gray-600 hover:text-blue-600 pb-1" data-target="about">About Us</a>
+                <a href="#" class="nav-link text-gray-600 hover:text-blue-600 pb-1" data-target="angvey">Angvey</a>
+                <a href="#" class="nav-link text-gray-600 hover:text-blue-600 pb-1" data-target="contact">Contact</a>
+                </div>
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded hover:bg-gray-100">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+            <a href="#" class="block px-6 py-3 text-gray-600 hover:bg-gray-100 nav-link" data-target="home">Home</a>
+            <a href="#" class="block px-6 py-3 text-gray-600 hover:bg-gray-100 nav-link" data-target="about">About Us</a>
+            <a href="#" class="block px-6 py-3 text-gray-600 hover:bg-gray-100 nav-link" data-target="angvey">Angvey</a>
+            <a href="#" class="block px-6 py-3 text-gray-600 hover:bg-gray-100 nav-link" data-target="contact">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 md:py-20">
+
+        <section id="home">
+            <div class="text-center mb-16 md:mb-24">
+                <img src="https://i.imgur.com/yGjON4g.png" alt="Engaging Visual Placeholder" class="w-full max-w-4xl mx-auto rounded-lg shadow-md mb-8" onerror="this.src='https://placehold.co/1200x500/EBF4FF/4A5568?text=Image+Error'">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Angvey International: Building Friendly and Intelligent AI Solutions</h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">Experience conversational AI designed for natural, helpful, and truly friendly interactions. Get answers, assistance, and insights like never before.</p>
+                <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow transition duration-300 nav-link-button" data-target="angvey">
+                    Discover Angvey
+                </button>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-md mb-16 md:mb-24 max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-semibold text-gray-800 mb-4">Welcome to Angvey International</h2>
+                <p class="text-gray-600 mb-6">
+                    At Angvey International, we believe AI should enhance human connection, not replace it. Our mission is to create intelligent systems, led by our flagship chatbot Angvey, that are not only powerful and accurate but also genuinely friendly, empathetic, and easy to interact with. We're pioneering the future of human-AI collaboration.
+                </p>
+                <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-6 rounded-lg transition duration-300 nav-link-button" data-target="about">
+                    Learn More About Us
+                </button>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 text-center max-w-5xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="text-blue-600 mb-3 text-4xl">💬</div>
+                    <h3 class="text-xl font-semibold mb-2">Truly Friendly Conversations</h3>
+                    <p class="text-gray-600">Interact with AI that understands context and responds naturally.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                     <div class="text-blue-600 mb-3 text-4xl">💡</div>
+                    <h3 class="text-xl font-semibold mb-2">Accurate & Reliable Info</h3>
+                    <p class="text-gray-600">Get trustworthy answers powered by cutting-edge intelligence.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                     <div class="text-blue-600 mb-3 text-4xl">👍</div>
+                    <h3 class="text-xl font-semibold mb-2">Simple & Intuitive</h3>
+                    <p class="text-gray-600">Easy to use, no complex commands needed.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h1 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">Our Story: The People and Passion Behind Friendly AI</h1>
+
+            <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Why We Started Angvey International</h2>
+                <p class="text-gray-600 leading-relaxed">
+                   Angvey International was born from a simple observation: while AI was becoming incredibly powerful, it often felt cold, impersonal, and difficult to use. We saw a gap between capability and connection. We envisioned an AI that wasn't just a tool, but a helpful companion – intelligent enough to assist with complex tasks, yet friendly enough to make interactions feel natural and positive.
+                    <br><br>
+                    Our journey began with the goal to build AI that understands *you*, not just your commands. We are committed to pushing the boundaries of conversational AI, ensuring that technology serves humanity in the most helpful and approachable way possible.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-6">Our Guiding Principles</h2>
+                <p class="text-gray-600 mb-4"><strong class="text-gray-800">Mission:</strong> Our mission is to develop Artificial Intelligence that enhances human potential through friendly, intelligent, and ethical interactions, making advanced technology accessible and beneficial for everyone.</p>
+                <h3 class="text-xl font-semibold text-gray-800 mb-3">Values:</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-600">
+                    <li><strong class="text-gray-700">Friendliness:</strong> We prioritize creating AI that is approachable, empathetic, and positive.</li>
+                    <li><strong class="text-gray-700">Intelligence:</strong> We are committed to cutting-edge AI development for accuracy and capability.</li>
+                    <li><strong class="text-gray-700">Integrity:</strong> We operate ethically and transparently in all our endeavors.</li>
+                    <li><strong class="text-gray-700">User Focus:</strong> Our users' needs and experiences drive our innovation.</li>
+                    <li><strong class="text-gray-700">Responsibility:</strong> We are dedicated to the safe and ethical deployment of AI.</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Meet the Team</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <img src="https://i.imgur.com/a0gNfln.jpeg" alt="Founder Photo Placeholder" class="w-32 h-32 rounded-full mx-auto mb-4 shadow-md" onerror="this.src='https://placehold.co/200x200/E0E7FF/4A5568?text=Error'">
+                        <h3 class="text-xl font-semibold">Lakshay Boora</h3>
+                        <p class="text-blue-600 font-medium mb-2">Founder & CEO</p>
+                        <p class="text-gray-600 text-sm">Lakshay is an ambitious AI developer with a passion for creating emotionally intelligent and interactive systems. With hands-on experience in coding, computer vision, and advanced AI tools like OpenCV and NLTK, he is dedicated to pushing the boundaries of AI innovation. As the creator of Angvey, he envisions an AI that seamlessly blends human-centric design with advanced reasoning capabilities. Through Angvey International, Lakshay aims to redefine how AI interacts with people, making technology more intuitive, ethical, and empowering.</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://i.imgur.com/DYltLil.jpeg"  alt="Team Member Photo Placeholder" class="w-32 h-32 rounded-full mx-auto mb-4 shadow-md" onerror="this.src='https://placehold.co/200x200/E0E7FF/4A5568?text=Error'">
+                        <h3 class="text-xl font-semibold">Jitender Boora</h3>
+                        <p class="text-blue-600 font-medium mb-2">Co-Founder</p>
+                        <p class="text-gray-600 text-sm">Jitender Boora is a vital pillar in the foundation of Angvey International, bringing a deep connection to society and a love for culture. As a true <strong>theth Haryanvi</strong>, they embody the rich heritage and traditions of Haryana while fostering meaningful relationships within the community. Their passion for preserving cultural identity and blending it with cutting-edge AI innovation has helped shape Angvey’s vision of making technology more accessible and relatable. With their strong social presence and dedication to ethical AI, they play a crucial role in bridging the gap between technology and human connection</p>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+
+        <section id="angvey">
+            <h1 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">Angvey: Your Friendly and Intelligent AI Chatbot</h1>
+
+             <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Meet Angvey – a new generation of conversational AI. Angvey goes beyond simple question-and-answer interactions to provide a genuinely helpful, engaging, and friendly experience. Whether you need information, assistance with tasks, or just a stimulating conversation, Angvey is designed to understand context, remember details, and respond with personality and accuracy.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">The Technology Behind the Friendliness</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    Angvey is powered by advanced Large Language Models (LLMs) and proprietary techniques focused on natural language understanding and generation. We've specifically trained Angvey to prioritize not just factual accuracy but also conversational flow, appropriate tone, and contextual awareness, making interactions feel more natural and less robotic.
+                </p>
+               
+            </div>
+
+             <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-6">What Makes Angvey Special</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="flex items-start space-x-3">
+                        <span class="text-blue-600 text-xl mt-1">✓</span>
+                        <div><strong class="text-gray-700">Natural Conversation:</strong> Engages in fluid, context-aware dialogue.</div>
+                    </div>
+                     <div class="flex items-start space-x-3">
+                        <span class="text-blue-600 text-xl mt-1">✓</span>
+                        <div><strong class="text-gray-700">Friendly Personality:</strong> Designed to be approachable, positive, and empathetic.</div>
+                    </div>
+                     <div class="flex items-start space-x-3">
+                        <span class="text-blue-600 text-xl mt-1">✓</span>
+                        <div><strong class="text-gray-700">High Accuracy:</strong> Provides reliable information drawn from vast knowledge.</div>
+                    </div>
+                     <div class="flex items-start space-x-3">
+                        <span class="text-blue-600 text-xl mt-1">✓</span>
+                        <div><strong class="text-gray-700">Task Assistance:</strong> Helps with writing, brainstorming, summarizing, and more.</div>
+                    </div>
+                     <div class="flex items-start space-x-3">
+                        <span class="text-blue-600 text-xl mt-1">✓</span>
+                        <div><strong class="text-gray-700">Learning & Adaptation:</strong> Improves responses based on interaction patterns (while respecting privacy).</div>
+                    </div>
+                     <div class="flex items-start space-x-3">
+                        <span class="text-blue-600 text-xl mt-1">✓</span>
+                        <div><strong class="text-gray-700">Easy Integration (Optional):</strong> Simple to embed or connect via API.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-6">How Angvey Helps You</h2>
+                 <div class="grid md:grid-cols-2 gap-6 text-gray-600">
+                    <p><strong class="text-gray-800">Save Time:</strong> Get answers and complete tasks faster.</p>
+                    <p><strong class="text-gray-800">Enhance Productivity:</strong> Use Angvey for brainstorming, drafting content, and more.</p>
+                    <p><strong class="text-gray-800">Enjoyable Interaction:</strong> Experience AI that's pleasant and easy to talk to.</p>
+                    <p><strong class="text-gray-800">Reliable Information:</strong> Access accurate data and explanations.</p>
+                    <p><strong class="text-gray-800">Reduce Friction:</strong> Accomplish goals with a helpful digital assistant.</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center">See Angvey at Work</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <img src="https://i.imgur.com/kVqHXDT.png" alt="Angvey Screenshot Placeholder" class="rounded-lg shadow" onerror="this.src='https://placehold.co/600x400/DBEAFE/1E40AF?text=Error'">
+                   
+                </div>
+                 <div class="mt-8 text-center text-blue-600 hover:underline">
+                     <a href="#">[ Link to Interactive Web Demo (Coming Soon) ]</a>
+                 </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-md mb-12">
+                 <h2 class="text-2xl font-semibold text-gray-800 mb-6">What Can You Do With Angvey?</h2>
+                 <ul class="list-disc list-inside space-y-2 text-gray-600">
+                    <li><strong>Personal Assistant:</strong> Manage schedules, set reminders, get quick info.</li>
+                    <li><strong>Learning & Research:</strong> Explain complex topics, summarize articles, find data.</li>
+                    <li><strong>Creative Partner:</strong> Brainstorm ideas, draft emails, write code snippets.</li>
+                    <li><strong>Everyday Help:</strong> Get recipes, travel tips, definitions, translations.</li>
+                    <li><strong>Friendly Chat:</strong> Engage in open-ended, stimulating conversations.</li>
+                 </ul>
+            </div>
+
+            <div class="bg-blue-50 p-8 rounded-lg shadow-inner mb-12">
+                 <h2 class="text-2xl font-semibold text-blue-800 mb-6 text-center">What Users Are Saying</h2>
+                 <div class="space-y-6">
+                     <blockquote class="border-l-4 border-blue-300 pl-4 italic text-gray-700">
+                         "Angvey is surprisingly natural to chat with. It actually feels like it understands what I'm asking."
+                         <footer class="mt-2 text-sm text-gray-600 not-italic">- Beta Tester</footer>
+                     </blockquote>
+                      <blockquote class="border-l-4 border-blue-300 pl-4 italic text-gray-700">
+                         Angvey makes AI feel more human—helpful, engaging, and always ready to assist with a friendly touch."
+                         <footer class="mt-2 text-sm text-gray-600 not-italic">- Early User</footer>
+                     </blockquote>
+                 </div>
+            </div>
+
+             <div class="text-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white p-10 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold mb-4">Ready to Experience Friendly AI?</h2>
+                <div class="space-x-4">
+                   <button class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-600 font-semibold py-3 px-8 rounded-lg shadow transition duration-300 nav-link-button" data-target="contact">
+                        Start Chatting with Angvey
+                    </button>
+                    <button class="bg-white hover:bg-gray-100 text-blue-600 font-semibold py-3 px-8 rounded-lg shadow transition duration-300"onclick="window.location.href='https://theth-haryana.blogspot.com/2017/08/24.html';">
+                      Read Cultural and Social Stories
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8">Get in Touch</h1>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                We'd love to hear from you! Whether you have questions about Angvey, feedback for our team, partnership inquiries, or need support, please don't hesitate to reach out.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-6">Send Us a Message</h2>
+                    <form action="#" method="POST"> <div class="mb-4">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none" placeholder="Your Name">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none" placeholder="your.email@example.com">
+                        </div>
+                         <div class="mb-4">
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none" placeholder="Question about Angvey">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none" placeholder="Enter your message here..."></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow transition duration-300">
+                                Send Message
+                            </button>
+                        </div>
+                         </form>
+                </div>
+
+                <div class="space-y-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Contact Information</h2>
+                        <p class="text-gray-600 mb-3">
+                            <strong class="text-gray-700">General Inquiries:</strong>
+                            <a href="mailto:info@angveyinternational.com" class="text-blue-600 hover:underline">info@angveyinternational.com</a>
+                        </p>
+                        <p class="text-gray-600 mb-3">
+                            <strong class="text-gray-700">Support:</strong>
+                            <a href="mailto:support@angveyinternational.com" class="text-blue-600 hover:underline">support@angveyinternational.com</a>
+                        </p>
+                         
+                    </div>
+                     <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Connect With Us</h2>
+                         <div class="flex space-x-4">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-blue-600">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H6.329C4.54 1 3 2.541 3 4.329v15.342C3 21.459 4.54 23 6.329 23h11.339C19.46 23 21 21.459 21 19.671V4.329C21 2.541 19.46 1 17.668 1z" clip-rule="evenodd" /></svg>
+                                <span class="sr-only">LinkedIn</span>
+                            </a>
+                             <a href="#" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-blue-600">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 mt-20">
+        <div class="container mx-auto px-6 py-8 text-center md:flex md:justify-between md:items-center">
+            <p class="text-sm mb-4 md:mb-0">&copy; 2025 Angvey International. All Rights Reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-sm hover:text-white">Privacy Policy</a>
+                <a href="#" class="text-sm hover:text-white">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const navLinkButtons = document.querySelectorAll('.nav-link-button');
+            const sections = document.querySelectorAll('main section');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // Function to show the target section and hide others
+            function showSection(targetId) {
+                sections.forEach(section => {
+                    if (section.id === targetId) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+                // Scroll to top after navigation
+                window.scrollTo(0, 0);
+            }
+
+            // Function to update active nav link
+            function updateActiveLink(targetId) {
+                 navLinks.forEach(link => {
+                     if (link.dataset.target === targetId) {
+                         link.classList.add('active');
+                     } else {
+                         link.classList.remove('active');
+                     }
+                 });
+                 // Close mobile menu if open
+                 mobileMenu.classList.add('hidden');
+            }
+
+            // Event listeners for navigation links (header and mobile)
+            navLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault(); // Prevent default anchor behavior
+                    const targetId = link.dataset.target;
+                    if (targetId) {
+                        showSection(targetId);
+                        updateActiveLink(targetId);
+                    }
+                });
+            });
+
+             // Event listeners for buttons acting as nav links
+            navLinkButtons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    const targetId = button.dataset.target;
+                    if (targetId) {
+                        showSection(targetId);
+                        updateActiveLink(targetId);
+                         // Find the corresponding nav link and make it active
+                        document.querySelector(`.nav-link[data-target="${targetId}"]`)?.classList.add('active');
+                    }
+                });
+            });
+
+
+            // Mobile menu toggle
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Initially show the home section and set home link active
+            showSection('home');
+            updateActiveLink('home');
+        });
+    </script>
+
+</body>
+</html>
